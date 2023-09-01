@@ -1,2 +1,1 @@
-openai_api_key="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"
-brand_api="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"
+mykey="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"
