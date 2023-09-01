@@ -1,6 +1,5 @@
 import openai
 import streamlit as st
-from myapi import brand_api
 openai.api_key = "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"
 
 def extract_financial_data(text):
