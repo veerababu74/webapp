@@ -1,6 +1,7 @@
 import openai
 import streamlit as st
-openai.api_key = "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"
+from myapi import mykey
+openai.api_key = mykey
 
 def extract_financial_data(text):
     prompt =  text + get_prompt_financial() 
