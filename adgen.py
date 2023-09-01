@@ -5,7 +5,7 @@ from myapi import mykey
 headers = {
     "auth":st.secrats["myapi"],
 }
-openai.api_key = headers[auth]
+openai.api_key = headers["auth"]
 
 def extract_financial_data(text):
     prompt =  text + get_prompt_financial() 
