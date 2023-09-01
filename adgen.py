@@ -3,7 +3,7 @@ import streamlit as st
 from myapi import mykey
 
 st.write("api:", st.secrets["mpai"])
-openai.api_key =st.read("api)
+openai.api_key =st.api
 
 def extract_financial_data(text):
     prompt =  text + get_prompt_financial() 
