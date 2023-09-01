@@ -2,9 +2,10 @@ import openai
 import streamlit as st
 from myapi import mykey
 
-st.write("api:", st.secrets["mpai"])
-openai.api_key =st.api
 
+st.write(
+    openai.api_key == st.secrets["mpai"],
+)
 def extract_financial_data(text):
     prompt =  text + get_prompt_financial() 
     response = openai.ChatCompletion.create(
